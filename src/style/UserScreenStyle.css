@@ -1,0 +1,32 @@
+.root{
+    -fx-background-color: darkgrey;
+    -fx-font-family: Verdana;
+}
+
+.text-field{
+    -fx-text-fill: black;
+    -fx-prompt-text-fill: grey;
+}
+
+.button{
+    -fx-border-color: black;
+    -fx-border-width: 1px;
+    -fx-background-color: white;
+}
+
+.rezultat-text{
+    -fx-font-size: 40;
+}
+
+.rezultat-broj{
+    -fx-font-size: 50;
+}
+
+.izloguj-se{
+    -fx-text-fill: blue;
+}
+
+.izloguj-se:hover{
+    -fx-underline: true;
+    -fx-cursor: hand;
+}

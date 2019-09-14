@@ -1,0 +1,59 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.Menu?>
+
+<?import javafx.scene.control.MenuItem?>
+<GridPane fx:controller="main.Client"
+          xmlns:fx="http://javafx.com/fxml"
+          stylesheets="@../style/UserScreenStyle.css">
+
+
+    <VBox>
+        <MenuBar prefWidth="400">
+            <Menu text="Opcije">
+                <MenuItem text="Sačuvaj" onAction="#sacuvaj"/>
+                <!--<MenuItem text="Izloguj se"/>-->
+                <MenuItem text="Exit" onAction="#exit"/>
+            </Menu>
+        </MenuBar>
+        <HBox>
+            <padding>
+                <Insets left="5" top="5"/>
+            </padding>
+            <Label fx:id="izlogujSe" styleClass="izloguj-se" text="Izloguj se" alignment="CENTER_LEFT"
+                   onMouseClicked="#izlogujSe"/>
+        </HBox>
+        <HBox alignment="CENTER" prefWidth="300" spacing="100">
+            <padding>
+                <Insets left="0" top="15"/>
+            </padding>
+            <JFXTextField fx:id="prvi" prefWidth="50" promptText="prvi br." alignment="CENTER"/>
+            <JFXTextField fx:id="drugi" prefWidth="50" promptText="drugi br." alignment="CENTER"/>
+        </HBox>
+        <HBox alignment="CENTER" prefWidth="400" spacing="10">
+            <padding>
+                <Insets left="2" top="15"/>
+            </padding>
+            <JFXButton text="+" prefWidth="75" prefHeight="75" onMouseClicked="#saberi"/>
+            <JFXButton text="-" prefWidth="75" prefHeight="75" onMouseClicked="#oduzmi"/>
+            <JFXButton text="*" prefWidth="75" prefHeight="75" onMouseClicked="#pomnozi"/>
+            <JFXButton text="/" prefWidth="75" prefHeight="75" onMouseClicked="#podeli"/>
+        </HBox>
+        <Label styleClass="rezultat-text" text="Rezultat je:">
+            <padding>
+                <Insets left="10" top="15"/>
+            </padding>
+        </Label>
+        <HBox alignment="CENTER" prefWidth="400" prefHeight="250">
+            <Label fx:id="rezultat" styleClass="rezultat-broj" text="" alignment="CENTER"/>
+        </HBox>
+        <Label fx:id="limit" text="" styleClass="limit-text"/>
+    </VBox>
+
+</GridPane>

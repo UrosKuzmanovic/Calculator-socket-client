@@ -1,0 +1,11 @@
+Istorija računanja korisnika dkuzmanovic:
+
+
+5 + 6 = 11
+
+5 - 6 = -1
+
+5 * 6 = 30
+
+5.0 / 6.0 = 0.8333333
+

@@ -1,0 +1,40 @@
+.root{
+    -fx-background-color: darkgrey;
+    -fx-font-size: 20px;
+    -fx-font-family: Verdana;
+}
+
+.label{
+    -fx-text-fill: black;
+}
+
+.text-field{
+    -fx-font-size: 20px;
+    -fx-border-color: black;
+    -fx-background-color: white;
+    -fx-prompt-text-fill: grey;
+}
+
+.text-field:focused{
+    -fx-border-color: black;
+}
+
+.button{
+    -fx-background-color: white;
+    -fx-border-width: 1px;
+    -fx-border-color: black;
+    -fx-cursor: hand;
+}
+
+.label-text{
+    -fx-font-size: 40px;
+}
+
+.label-click{
+    -fx-text-fill: blue;
+}
+
+.label-click:hover{
+    -fx-underline: true;
+    -fx-cursor: hand;
+}

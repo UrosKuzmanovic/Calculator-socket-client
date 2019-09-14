@@ -1,0 +1,25 @@
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.geometry.Insets?>
+
+<AnchorPane fx:controller="main.Client"
+            xmlns:fx="http://javafx.com/fxml"
+            stylesheets="@../style/RegisterStyle.css">
+
+    <VBox alignment="CENTER" prefWidth="300" spacing="20">
+        <padding>
+            <Insets left="92" top="80"/>
+        </padding>
+        <Label styleClass="label-text" text="Register" alignment="CENTER"/>
+        <JFXTextField fx:id="username1" alignment="CENTER" promptText="username"/>
+        <JFXPasswordField fx:id="password1" alignment="CENTER" promptText="New password"/>
+        <JFXPasswordField fx:id="password1R" alignment="CENTER" promptText="Repeat password"/>
+        <JFXButton text="REGISTER" prefWidth="250" onMouseClicked="#register"/>
+        <Label styleClass="label-click" text="Imate nalog?" onMouseClicked="#loginScene"/>
+    </VBox>
+
+</AnchorPane>
